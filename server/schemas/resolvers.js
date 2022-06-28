@@ -46,7 +46,7 @@ const resolvers = {
                     {
                         $addToSet: { savedBooks: {...args} }
                     },
-                    { new: true, runValidators: true }
+                    { new: true }
                 );
 
                 return user;
