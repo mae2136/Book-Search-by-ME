@@ -77,6 +77,14 @@ const SavedBooks = () => {
     return <h2>LOADING...</h2>;
   }
 
+  if (!userData?.savedBooks) {
+    return (
+      <h4>
+        Something went wrong
+      </h4>
+    );
+  }
+
   return (
     <>
       <Jumbotron fluid className='text-light bg-dark'>
