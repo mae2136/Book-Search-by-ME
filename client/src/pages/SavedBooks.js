@@ -23,7 +23,10 @@ const SavedBooks = () => {
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
   const userData = data?.me || {};
-  console.log(userData);
+
+  if (!loading) {
+    console.log(data);
+  }
 
   // useEffect(() => {
   //   const getUserData = async () => {
